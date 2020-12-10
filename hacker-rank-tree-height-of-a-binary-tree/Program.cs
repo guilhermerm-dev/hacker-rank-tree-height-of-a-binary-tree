@@ -6,9 +6,9 @@ namespace hacker_rank_tree_height_of_a_binary_tree
     {
         static void Main(string[] args)
         {
-            int element = int.Parse(Console.ReadLine());
+            int numberOfNodes = int.Parse(Console.ReadLine());
             Node root = null;
-            while (element-- > 0)
+            while (numberOfNodes-- > 0)
             {
                 int data = int.Parse(Console.ReadLine());
                 root = Insert(root, data);
