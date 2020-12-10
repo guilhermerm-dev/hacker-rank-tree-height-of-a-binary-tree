@@ -4,16 +4,19 @@ namespace hacker_rank_tree_height_of_a_binary_tree
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.Write("Input the number of nodes: ");
             int numberOfNodes = int.Parse(Console.ReadLine());
             Node root = null;
+            Console.WriteLine("Input the nodes");
             while (numberOfNodes-- > 0)
             {
                 int data = int.Parse(Console.ReadLine());
                 root = Insert(root, data);
             }
             int height = Height(root);
+            Console.WriteLine($"The height of binary tree is {height}");
             Console.ReadKey();
         }
 
